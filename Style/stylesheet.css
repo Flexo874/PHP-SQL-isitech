@@ -7,10 +7,10 @@
 }
 body{
     overflow-x: hidden;
+    background-image:url(../Images/lines.webp);
 }
 
 .header {
-    position:absolute;
     display: flex;
     align-items: center;
     background-color: black;
