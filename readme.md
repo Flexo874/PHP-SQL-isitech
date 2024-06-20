@@ -15,7 +15,8 @@ L'utilisateur peut avoir une liste complète du stock avec la quantité et la de
 
 
 ## Database
-Il faudra créer la base de données et les tables users et medicament sur phpMyAdmin
+J'ai exporté la bdd dans un fichier "meds.sql" pour l'importer directement sur phpMyAdmin.
+sinon il faudra créer la base de données et les tables users et medicament sur phpMyAdmin avec des requetes SQL qui suivent.
 
 ````sql
 CREATE DATABASE meds;
