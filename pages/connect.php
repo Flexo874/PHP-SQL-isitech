@@ -1,5 +1,5 @@
 <?php
-require_once './comps/connection.php';
+require_once '../comps/connection.php';
 ?>
 
 <!DOCTYPE html>
