@@ -1,10 +1,10 @@
 <?php
 
     function connection(){
-        $host = '10.0.0.161';
+        $host = 'localhost';
         $db   = 'meds';
-        $user = 'root';
-        $pass = '';
+        $user = 'fel';
+        $pass = 'Azerty123!';
         $charset = 'utf8mb4';
 
         $dsn = "mysql:host=$host;dbname=$db;charset=$charset";

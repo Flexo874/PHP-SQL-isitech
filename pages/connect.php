@@ -1,5 +1,5 @@
 <?php
-require_once '../comps/connection.php';
+require_once './comps/connection.php';
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +18,7 @@ require_once '../comps/connection.php';
 <body>
 <div class="login-container">
     <h2>Connexion</h2>
-    <form action="/B1/comps/connection.php" method="post">
+    <form action="./comps/connection.php" method="post">
         <label for="username">Nom d'utilisateur :</label>
         <input type="text" id="username" name="username" required>
 
