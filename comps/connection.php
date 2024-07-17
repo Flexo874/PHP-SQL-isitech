@@ -27,6 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo password_verify($password, $correct_password) ? 'true' : 'false';
 
     if ($correct_username == $username && password_verify($password,$correct_password)) {
+        var_dump($user);
         die();
         $_SESSION['username'] = $username;
 
