@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt = $pdo->prepare($sql);
         $stmt->execute();
         echo "New record created successfully";
-        header('Location: connect.php');
+        header('Location: ../pages/connect.php');
         exit();
     }
 
