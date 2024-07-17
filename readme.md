@@ -1,5 +1,5 @@
 # Pharmacy
-# TEST GITHUB
+
 ## Description
 Pharmacy est un site web qui permet 
 aux professionnels de gerer leurs stock de médicaments.

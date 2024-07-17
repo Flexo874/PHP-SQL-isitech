@@ -1,7 +1,7 @@
 <?php
 
     function connection(){
-        $host = '127.0.0.1';
+        $host = '158.178.196.199';
         $db   = 'meds';
         $user = 'root';
         $pass = '';
