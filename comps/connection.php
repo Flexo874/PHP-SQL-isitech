@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     }
     else {
-        header('Location: ../connect.php');
+        header('Location: ../pages/connect.php');
     }
 
 }
