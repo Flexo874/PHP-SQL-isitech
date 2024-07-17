@@ -60,7 +60,7 @@ $result = $stmt->fetchAll();
             <li> <a href="stock.php" data-text="Stocks">Stocks</a> </li>
             
         </nav>
-        <a href="/B1/comps/logout.php">
+        <a href="../comps/logout.php">
             <img src="../Images/icons8-login-50.png" alt="Login">
         </a>
     </header>
@@ -68,7 +68,7 @@ $result = $stmt->fetchAll();
     <div class="global">
     <div class="form-container">
         <h1>Ajouter un Médicament</h1>
-        <form action="/B1/comps/insert_medicament.php" method="post">
+        <form action="../comps/insert_medicament.php" method="post">
             <label for="nom">Nom du Médicament:</label>
             <input type="text" id="nom" name="nom" required><br><br>
             <label for="nom">Quantite:</label>
@@ -96,8 +96,8 @@ $result = $stmt->fetchAll();
                     <td><?php echo htmlspecialchars($medicament['nom']); ?></td>
                     <td><?php echo htmlspecialchars($medicament['quantite']); ?></td>
                     <td><?php echo htmlspecialchars($medicament['description']); ?></td>
-                    <td><a href="modifymeds.php?id=<?php echo $medicament['id']?>"><img src="/B1/Images/parametres-gear.png"></a></td>
-                    <td><a href="/B1/comps/deletemed.php?id=<?php echo $medicament['id']?>" ><img src="/B1/Images/img.png"> </a></td>
+                    <td><a href="modifymeds.php?id=<?php echo $medicament['id']?>"><img src="../Images/parametres-gear.png"></a></td>
+                    <td><a href="../comps/deletemed.php?id=<?php echo $medicament['id']?>" ><img src="../Images/img.png"> </a></td>
                 </tr>
             <?php endforeach; ?>
         <?php else: ?>

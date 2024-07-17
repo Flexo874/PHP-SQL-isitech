@@ -1,5 +1,5 @@
 <?php
-include_once '../comps/connection.php';
+require_once '../comps/connection.php';
 
 ?>
 
