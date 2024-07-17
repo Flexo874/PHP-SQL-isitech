@@ -16,6 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->execute();
     $user = $stmt->fetch();
     var_dump($user);
+    die();
     $correct_username = $user['username'];
     $correct_password = $user['password'];
 
@@ -28,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($correct_username == $username && password_verify($password,$correct_password)) {
         $_SESSION['username'] = $username;
-        
+
         header('Location: /index.php');
         exit();
     }
