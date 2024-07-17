@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     else {
         header('Location: ../pages/connect.php');
-
+        echo "Wrong username or password";
     }
 
 }
