@@ -24,7 +24,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header('Location: ../pages/connect.php');
         exit();
     }
-
+    else{
+        echo "error connection";;
+    }
 }
 
 
