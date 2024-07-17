@@ -18,13 +18,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $correct_username = $user['username'];
     $correct_password = $user['password'];
-/*
+
     echo $password;
     echo '<br>';
     echo $correct_password;
     echo '<br>';
 
-    echo password_verify($password, $correct_password) ? 'true' : 'false';*/
+    echo password_verify($password, $correct_password) ? 'true' : 'false';
 
     if ($correct_username == $username && password_verify($password,$correct_password)) {
         $_SESSION['username'] = $username;
@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
 }
-?>
+
 
 
 
