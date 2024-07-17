@@ -22,18 +22,18 @@ sinon il faudra créer la base de données et les tables users et medicament sur
 CREATE DATABASE meds;
        
 USE meds;
-    
+
 CREATE TABLE `medicament` (
-   `id` int(11) NOT NULL,
-   `nom` varchar(255) NOT NULL,
-   `quantite` int(11) NOT NULL,
-   `description` varchar(255) DEFAULT NULL
+                              `id` int(11) NOT NULL,
+                              `nom` varchar(255) NOT NULL,
+                              `quantite` int(11) NOT NULL,
+                              `description` varchar(255) DEFAULT NULL
 );
 
 CREATE TABLE `users` (
-    `id` int(11) NOT NULL,
-    `password` text NOT NULL,
-    `username` varchar(10) DEFAULT NULL
+                         `id` int(11) NOT NULL,
+                         `password` text NOT NULL,
+                         `username` varchar(10) DEFAULT NULL
 );
 ````
 
