@@ -15,8 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt = $pdo->prepare($sql);
     $stmt->execute();
     $user = $stmt->fetch();
-    var_dump($user);
-    die();
+
     $correct_username = $user['username'];
     $correct_password = $user['password'];
 
@@ -28,6 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo password_verify($password, $correct_password) ? 'true' : 'false';
 
     if ($correct_username == $username && password_verify($password,$correct_password)) {
+        die();
         $_SESSION['username'] = $username;
 
         header('Location: /index.php');
