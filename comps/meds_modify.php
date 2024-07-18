@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt = $pdo->prepare($sql);
     $stmt->execute();
     $stmt->fetch();
-    header("location: /B1/pages/stock.php");
+    header("location: ../pages/stock.php");
 
 }
 
