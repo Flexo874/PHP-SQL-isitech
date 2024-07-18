@@ -97,7 +97,7 @@ $result = $stmt->fetchAll();
                     <td><?php echo htmlspecialchars($medicament['quantite']); ?></td>
                     <td><?php echo htmlspecialchars($medicament['description']); ?></td>
                     <td><a href="modifymeds.php?id=<?php echo $medicament['id']?>"><img src="../Images/parametres-gear.png"></a></td>
-                    <td><a href="../comps/deletemed.php?id=<?php echo $medicament['id']?>" ><img src="../Images/img.png"> </a></td>
+                    
                 </tr>
             <?php endforeach; ?>
         <?php else: ?>
