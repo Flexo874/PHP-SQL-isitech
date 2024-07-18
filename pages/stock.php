@@ -82,25 +82,25 @@ $result = $stmt->fetchAll();
     <table >
         <thead>
         <tr>
-
+            <th style="width: 100px"></th>
             <th style="width: 150px">Nom du Médicament</th>
             <th style="width: 100px">Quantité</th>
             <th style="width: 400px">Description</th>
-            <th style="width: 100px"></th>
+
         </tr>
         </thead>
         <tbody>
         <?php if (count($result) > 0): ?>
             <?php foreach ($result as $medicament): ?>
                 <tr>
-
-                    <td><?php echo htmlspecialchars($medicament['nom']); ?></td>
-                    <td><?php echo htmlspecialchars($medicament['quantite']); ?></td>
-                    <td><?php echo htmlspecialchars($medicament['description']); ?></td>
                     <td style="display: inline-block">
                         <a href="modifymeds.php?id=<?php echo $medicament['id']?>" ><img src="../Images/parametres-gear.png"></a>
                         <a href="../comps/deletemed.php?id=<?php echo $medicament['id']?>"><img src="../Images/img.png"> </a>
                     </td>
+                    <td><?php echo htmlspecialchars($medicament['nom']); ?></td>
+                    <td><?php echo htmlspecialchars($medicament['quantite']); ?></td>
+                    <td><?php echo htmlspecialchars($medicament['description']); ?></td>
+
 
                 </tr>
             <?php endforeach; ?>
