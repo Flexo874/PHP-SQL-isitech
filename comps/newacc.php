@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $user = $stmt->fetch();
 
     if ($repassword == $password && $username != $user['username']) {
-        $sql = "INSERT INTO users (id,username, password) VALUES (1900,'{$username}','{$hpassword}')";
+        $sql = "INSERT INTO users (id,username, password) VALUES ('{$username}','{$hpassword}')";
 
 
         $stmt = $pdo->prepare($sql);
