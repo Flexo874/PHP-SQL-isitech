@@ -78,8 +78,8 @@ $result = $stmt->fetchAll();
             <input type="submit" value="Ajouter">
         </form>
     </div>
-    <div class="table" style="overflow-x: auto ;">
-    <table width="auto";>
+    <div class="table" style="overflow-x: auto ; overflow-y: auto">
+    <table >
         <thead>
         <tr>
 
@@ -98,7 +98,7 @@ $result = $stmt->fetchAll();
                     <td><?php echo htmlspecialchars($medicament['quantite']); ?></td>
                     <td><?php echo htmlspecialchars($medicament['description']); ?></td>
                     <td j>
-                        <a href="modifymeds.php?id=<?php echo $medicament['id']?>" width="100" height="100";><img src="../Images/parametres-gear.png"></a>
+                        <a href="modifymeds.php?id=<?php echo $medicament['id']?>" style="width=100 height=100;"><img src="../Images/parametres-gear.png"></a>
                         <a href="../comps/deletemed.php?id=<?php echo $medicament['id']?>" width="100" height="100"><img src="../Images/img.png"> </a>
                     </td>
 
