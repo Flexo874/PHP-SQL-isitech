@@ -82,11 +82,11 @@ $result = $stmt->fetchAll();
     <table >
         <thead>
         <tr>
-            <th style="width: 40px display: inline-block"></th>
+
             <th style="width: 150px">Nom du Médicament</th>
             <th style="width: 100px">Quantité</th>
             <th style="width: 400px">Description</th>
-
+            <th style="width: 40px display: inline-block"></th>
         </tr>
         </thead>
         <tbody>
