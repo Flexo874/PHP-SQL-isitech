@@ -3,8 +3,10 @@
     function connection(){
         $host = 'localhost';
         $db   = 'meds';
-        $user = getenv('USER1')?getenv('USER1'):'root';
-        $pass = getenv('password')?getenv('password'):'';
+//        $user = getenv('USER1')?getenv('USER1'):'root';
+//        $pass = getenv('password')?getenv('password'):'';
+        $user = 'fel';
+        $pass = 'Azerty123!';
         $charset = 'utf8mb4';
 
         $dsn = "mysql:host=$host;dbname=$db;charset=$charset";

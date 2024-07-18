@@ -47,6 +47,15 @@ sudo apt install apache2 -y
 sudo systemctl start apache2
 sudo systemctl enable apache2
 ````
+
+## Pare-feu
+Autoriser le traffic de données
+````sql
+sudo ufw allow 'Apache'
+sudo ufw enable
+sudo ufw status
+````
+
 ##  MySQL
 ````sql
 sudo apt install mysql-server -y
@@ -54,10 +63,35 @@ sudo mysql_secure_installation //sécuriser l'installation '
                                // suivre les étapes 
           
 ````
+Créer utilisateur Mysql
+````sql
+sudo mysql;
+CREATE USER 'myuser'@'localhost' IDENTIFIED BY 'Mypassword1234!';
+GRANT ALL PRIVILEGES ON mydatabase.* TO 'myuser'@'localhost';
+FLUSH PRIVILEGES;
+EXIT;
+Replace
+````
+
 Créer BDD et tables : 
 
 ````sql
+CREATE DATABASE meds;
+       
+USE meds;
 
+CREATE TABLE `medicament` (
+                               id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+                              `nom` varchar(255) NOT NULL,
+                              `quantite` int(11) NOT NULL,
+                              `description` varchar(255) DEFAULT NULL
+);
+
+CREATE TABLE `users` (
+                          id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+                         `password` text NOT NULL,
+                         `username` varchar(10) DEFAULT NULL
+);
 ````
 
 ## Installer PHP
