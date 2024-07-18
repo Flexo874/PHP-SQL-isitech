@@ -78,7 +78,7 @@ $result = $stmt->fetchAll();
             <input type="submit" value="Ajouter">
         </form>
     </div>
-    <div class="table" style="overflow-x: auto ; overflow-y: auto">
+    <div class="table" style="overflow-x: auto ; overflow-y: hidden">
     <table >
         <thead>
         <tr>
