@@ -21,7 +21,7 @@ $medicament = preremplirForm($_GET['id']);
 <body>
 <div class="login-container">
     <h2>Modifier</h2>
-    <form action="/B1/comps/meds_modify.php?id=<?php echo $_GET['id'] ?>" method="post">
+    <form action="../comps/meds_modify.php?id=<?php echo $_GET['id'] ?>" method="post">
         <label for="nom">Nom du Médicament :</label>
         <input type="text" id="nom" name="nom" value="<?php echo $medicament['nom']?>" required>
 
