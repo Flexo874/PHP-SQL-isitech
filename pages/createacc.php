@@ -19,7 +19,7 @@ require_once '../comps/newacc.php';
 <body>
 <div class="login-container">
     <h2>Inscription</h2>
-    <form action="" method="post">
+    <form action="../comps/newacc.php" method="post">
         <label for="username">Nom d'utilisateur :</label>
         <input type="text" id="username" name="username" required>
 
