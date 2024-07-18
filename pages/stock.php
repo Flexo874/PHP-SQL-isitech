@@ -78,14 +78,14 @@ $result = $stmt->fetchAll();
             <input type="submit" value="Ajouter">
         </form>
     </div>
-    <div class="table" style="overflow-x: auto ; overflow-y: hidden">
+    <div class="table" style="overflow-x: auto ;">
     <table >
         <thead>
         <tr>
 
             <th width=200px;>Nom du Médicament</th>
             <th width=100px;>Quantité</th>
-            <th>Description</th>
+            <th width=400px;>Description</th>
             <th></th>
         </tr>
         </thead>
