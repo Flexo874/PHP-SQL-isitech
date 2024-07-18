@@ -102,7 +102,7 @@ $result = $stmt->fetchAll();
             <?php endforeach; ?>
         <?php else: ?>
             <tr>
-                <td colspan="3">Aucun médicament trouvé.</td>
+                <td colspan="3">Aucun médicament en stock.</td>
             </tr>
         <?php endif; ?>
         </tbody>

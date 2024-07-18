@@ -39,7 +39,7 @@ CREATE TABLE `medicament` (
 --
 
 INSERT INTO `medicament` (`id`, `nom`, `quantite`, `description`) VALUES
-(9, 'CoughSyrup', 120, 'Sirop contre la toux qui apaise la gorge et réduit les quintes de toux.        '),
+(9, 'CoughSyrup', 120, 'Sirop contre la toux qui apaise la gorge et réduit les quintes de toux.'),
 (10, 'VitaBoost', 300, 'Complément vitaminé pour renforcer le système immunitaire.'),
 (11, 'SleepAid', 90, 'Aide à améliorer la qualité du sommeil et à réduire l\'insomnie.'),
 (12, 'DigestWell', 60, 'Aide à la digestion et soulage les maux d\'estomac.'),

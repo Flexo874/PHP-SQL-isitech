@@ -8,4 +8,4 @@ $sql = "DELETE FROM medicament WHERE id = {$id}";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 
-header('Location: /B1/pages/stock.php');
+header('Location: ../pages/stock.php');
