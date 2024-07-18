@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $repassword = $_POST['repassword'];
     $hpassword=password_hash($_POST['password'], PASSWORD_DEFAULT);
 
-    $sql = "SELECT * FROM users WHERE username = '$username'";
+    $sql = "SELECT * FROM users WHERE username = '{$username}'";
     $stmt = $pdo->prepare($sql);
     $stmt->execute();
     $user = $stmt->fetch();
