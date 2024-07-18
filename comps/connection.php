@@ -25,10 +25,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo '<br>';
 
     echo password_verify($password, $correct_password) ? 'true' : 'false';
-
+    var_dump($user);
+    die();
     if ($correct_username == $username && password_verify($password,$correct_password)) {
-        var_dump($user);
-        die();
+
         $_SESSION['username'] = $username;
 
         header('Location: /index.php');
