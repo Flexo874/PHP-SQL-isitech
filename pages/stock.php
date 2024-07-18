@@ -79,7 +79,7 @@ $result = $stmt->fetchAll();
         </form>
     </div>
     <div class="table" style="overflow-x: auto ;">
-    <table>
+    <table width="auto";>
         <thead>
         <tr>
 
