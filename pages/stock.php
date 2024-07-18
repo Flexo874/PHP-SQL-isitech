@@ -97,9 +97,9 @@ $result = $stmt->fetchAll();
                     <td><?php echo htmlspecialchars($medicament['nom']); ?></td>
                     <td><?php echo htmlspecialchars($medicament['quantite']); ?></td>
                     <td><?php echo htmlspecialchars($medicament['description']); ?></td>
-                    <td j>
-                        <a href="modifymeds.php?id=<?php echo $medicament['id']?>" style="width=100 height=100;"><img src="../Images/parametres-gear.png"></a>
-                        <a href="../comps/deletemed.php?id=<?php echo $medicament['id']?>" width="100" height="100"><img src="../Images/img.png"> </a>
+                    <td style="display: inline-block">
+                        <a href="modifymeds.php?id=<?php echo $medicament['id']?>" ><img src="../Images/parametres-gear.png"></a>
+                        <a href="../comps/deletemed.php?id=<?php echo $medicament['id']?>"><img src="../Images/img.png"> </a>
                     </td>
 
                 </tr>
