@@ -83,8 +83,8 @@ $result = $stmt->fetchAll();
         <thead>
         <tr>
 
-            <th width=100px;>Nom du Médicament</th>
-            <th>Quantité</th>
+            <th width=200px;>Nom du Médicament</th>
+            <th width=100px;>Quantité</th>
             <th>Description</th>
         </tr>
         </thead>
