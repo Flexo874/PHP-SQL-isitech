@@ -17,10 +17,7 @@
         ];
 
         try {
-            var_dump($dsn);
-            var_dump($options);
-            var_dump($user);
-            var_dump($pass);
+        
             $pdo = new PDO($dsn, $user, $pass, $options);
 
         } catch (PDOException $e) {
