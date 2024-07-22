@@ -3,10 +3,10 @@
     function connection(){
         $host = 'localhost';
         $db   = 'meds';
-//        $user = getenv('USER1')?getenv('USER1'):'root';
-//        $pass = getenv('password')?getenv('password'):'';
-        $user = 'fel';
-        $pass = 'Azerty123!';
+        $user = getenv('USER1')?getenv('USER1'):'root';
+        $pass = getenv('password')?getenv('password'):'';
+
+
         $charset = 'utf8mb4';
 
         $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
@@ -21,13 +21,13 @@
             var_dump($options);
             var_dump($user);
             var_dump($pass);
-            // $pdo = new PDO($dsn, $user, $pass, $options);
+            $pdo = new PDO($dsn, $user, $pass, $options);
 
-        } catch (\PDOException $e) {
-            throw new \PDOException($e->getMessage(), (int)$e->getCode());
+        } catch (PDOException $e) {
+            throw new PDOException($e->getMessage(), (int)$e->getCode());
         }
 
-     //   return $pdo;
+        return $pdo;
     }
 
     connection();
