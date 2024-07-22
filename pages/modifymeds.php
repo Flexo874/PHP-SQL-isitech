@@ -34,10 +34,10 @@ $medicament = preremplirForm($_GET['id']);
         <textarea class="desc" type="text" id="description" name="description" required><?php echo $medicament['description']?>
         </textarea>
 
-            <button type="submit">Modifier</button>
-            <div class="bouton">
-                <a href="stock.php"> Retour</a>
-            </div>
+        <button type="submit">Modifier</button>
+        <a href="stock.php">
+            <button>Retour</button>
+        </a>
 
 
     </form>
